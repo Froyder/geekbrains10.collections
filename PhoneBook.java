@@ -12,6 +12,7 @@ public class PhoneBook extends TreeMap {
         phoneBook.put(phone, name);
     }
 
+    //метод для поиска телефона по фамилии
     public void getPhone (String naim) {
         int count = 0;
         for (Map.Entry<Integer, String> temp : phoneBook.entrySet()) {
