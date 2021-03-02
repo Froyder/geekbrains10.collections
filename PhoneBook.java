@@ -12,13 +12,14 @@ public class PhoneBook extends TreeMap {
         phoneBook.put(phone, name);
     }
 
-    //метод для поиска телефона по фамилии
     public void getPhone (String naim) {
+        int count = 0;
         for (Map.Entry<Integer, String> temp : phoneBook.entrySet()) {
             if (temp.getValue() == naim) {
                 System.out.println("Поиск по фамилии " + temp.getValue() + " дал следующий результат: "+ temp.getKey());
+                count++;
             }
-        }
+        }  System.out.println("Поиск завершен, совпадений - " + count + ".");
     }
 
     //печать справочника
